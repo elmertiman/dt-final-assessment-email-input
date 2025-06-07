@@ -112,21 +112,37 @@
   border-radius: 50%;
   margin-left: 5px;
 }
+
+
+.icon {
+  box-sizing: border-box;
+  color: #1a1818;
+ 
+}
+
+.email-chip.invalid:hover .icon.alerto::after {
+  content: "\00A0x\00A0";
+  padding: 2px 5px;
+   cursor: pointer;
+}
+
 .alerto::after {
   content: "\00A0!\00A0";
   color: white;
   padding: 2px 7px;
   
 }
-.alerto:hover::after{
+
+.email-chip:hover .icon.okay::after {
   content: "\00A0x\00A0";
   padding: 2px 5px;
-
+   cursor: pointer;
 }
 
-.icon {
-  box-sizing: border-box;
-  color: #1a1818;
-  cursor: pointer;
+.okay::after {
+  content: "\00A0 \00A0";
+  color: #333333;
+  padding: 2px 7px;
+  
 }
 

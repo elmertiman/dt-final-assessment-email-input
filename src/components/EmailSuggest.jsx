@@ -75,13 +75,7 @@ const EmailSuggest = () => {
               <span className="icon alerto" onClick={() => removeThisEmail(index)}></span>
             )}
             {thisEmail.valid && (
-              <button
-                className="remove-btn"
-                onClick={() => removeThisEmail(index)}
-                type="button"
-              >
-                ×
-              </button>
+              <span className="icon okay" onClick={() => removeThisEmail(index)}></span>
             )}
           </span>
         ))}
