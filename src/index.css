@@ -1,0 +1,114 @@
+.email-input-container {
+  width: 100%;
+  margin: 1rem 0;
+  position: relative;
+}
+.email-input-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border: 1.5px solid #bdbdbd;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 60px;
+  background: #fff;
+  cursor: text;
+}
+.email-chip {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  border-radius: 16px;
+  padding: 5px 0 5px 4px;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+  position: relative;
+}
+
+.email-chip:hover {
+      display: flex;
+      align-items: center;
+      background: #c6c6c6;
+      border-radius: 16px;
+      padding: 4px 0 2px 4px;
+      font-size: 1em;
+      font-weight: bold;
+      line-height: 1.5;
+      position: relative;
+}
+.email-chip.invalid {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+.invalid-icon {
+    background: #f8d7da;
+    color: #721c24;
+    border-radius: 50%;
+    font-size: 0.95em;
+    margin-left: 6px;
+    margin-right: 2px;
+    padding: 0 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.remove-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.1em;
+    margin-left: 4px;
+    cursor: pointer;
+}
+.email-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  min-width: 120px;
+  margin: 4px 0;
+  background: transparent;
+}
+.email-suggestions {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #bdbdbd;
+  border-radius: 0 0 8px 8px;
+  width: 100%;
+  z-index: 10;
+  margin-top: -2px;
+  list-style: none;
+  padding: 0;
+  max-height: 180px;
+  overflow-y: auto;
+}
+.suggested-email {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+.suggested-email:hover {
+  background: #e3f2fd;
+}
+
+.emailTag .close::after {
+  content: "\00A0\00A0\00A0";
+}
+.emailTag .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+}
+.alert::after {
+  content: "\00A0!\00A0";  
+  color: white;
+  background-color: #f1515f;
+  border-radius: 50%;
+}
