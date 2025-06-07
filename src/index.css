@@ -41,6 +41,7 @@
   background: #f8d7da;
   color: #721c24;
   border: 1px solid #f5c6cb;
+  margin-right: 2px;
 }
 .invalid-icon {
     background: #f8d7da;
@@ -106,20 +107,26 @@
   justify-content: center;
   color: #333333;
 }
-.alerto::after {
-  content: "\00A0!\00A0";  
-  color: white;
+.alerto{
   background-color: #f1515f;
   border-radius: 50%;
-  padding: 1px 4px;
+  margin-left: 5px;
+}
+.alerto::after {
+  content: "\00A0!\00A0";
+  color: white;
+  padding: 2px 7px;
+  
+}
+.alerto:hover::after{
+  content: "\00A0x\00A0";
+  padding: 2px 5px;
 
 }
 
 .icon {
   box-sizing: border-box;
   color: #1a1818;
+  cursor: pointer;
 }
 
-.icon.alerto {
-  padding-left: 8px;
-}
