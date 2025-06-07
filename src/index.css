@@ -117,7 +117,7 @@
 .icon {
   box-sizing: border-box;
   color: #1a1818;
- 
+  cursor: pointer;
 }
 
 .email-chip.invalid:hover .icon.alerto::after {
