@@ -1,9 +1,9 @@
 export async function retrieveEmails() {
-  const oResp = await fetch("/emails.js");
-  const sText = await oResp.text();
-  const hasMatch = sText.match(/export const emails = (\[.*\]);/s);
-  if (hasMatch) {
-    return eval(hasMatch[1]);
+  const oResponse = await fetch("/emails.js");
+  const sResponseText = await oResponse.text();
+  const hasEmailMatch = sResponseText.match(/export const emails = (\[.*\]);/s);
+  if (hasEmailMatch) {
+    return eval(hasEmailMatch[1]);
   }
   return [];
 }

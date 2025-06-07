@@ -1,5 +1,5 @@
 import React from "react";
-import EmailInput from "./components/EmailInput";
+import EmailSuggest from "./components/EmailSuggest";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
       }}
     >
       <div style={{ maxWidth: 600, width: "100%" }}>
-        <EmailInput />
+        <EmailSuggest />
       </div>
     </div>
   );

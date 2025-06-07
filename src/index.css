@@ -19,7 +19,8 @@
   align-items: center;
   color: #333333;
   border-radius: 16px;
-  padding: 5px 0 5px 4px;
+  padding: 1px 0 1px 5px;
+  margin-top: 2px;
   font-size: 1em;
   font-weight: bold;
   line-height: 1.5;
@@ -31,7 +32,6 @@
       align-items: center;
       background: #c6c6c6;
       border-radius: 16px;
-      padding: 4px 0 2px 4px;
       font-size: 1em;
       font-weight: bold;
       line-height: 1.5;
@@ -99,16 +99,27 @@
   position: absolute;
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0; 
   padding: 0 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #333333;
 }
-.alert::after {
+.alerto::after {
   content: "\00A0!\00A0";  
   color: white;
   background-color: #f1515f;
   border-radius: 50%;
+  padding: 1px 4px;
+
+}
+
+.icon {
+  box-sizing: border-box;
+  color: #1a1818;
+}
+
+.icon.alerto {
+  padding-left: 8px;
 }
